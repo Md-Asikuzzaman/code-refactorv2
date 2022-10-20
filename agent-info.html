@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/tfm/agent-info.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      hsref="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/60527c8c39.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- map settings start -->
+    <link rel="stylesheet" href="./assets/map/timezone-picker.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.21/moment-timezone.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.min.js"></script>
+
+    <!-- map settings end -->
+    <title>Agent Info</title>
+  </head>
+
+  <body>
+    <!-- hero section -->
+    <header class="hero-section">
+      <div class="container">
+        <div class="nav-container">
+          <nav>
+            <div class="logo">
+              <img src="assets/images/Logo.png" alt="" />
+            </div>
+            <ul class="nav-links mb-0">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="top-feature.html">Features</a></li>
+              <li><a href="models.html">Support Models</a></li>
+              <li><a href="price.html">Price</a></li>
+              <li><a href="agent-info.html">Resellers</a></li>
+              <li><a href="downloads.html">Download</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="nav-login">
+              <a
+                class="login"
+                data-toggle="modal"
+                data-target="#myModal"
+                href=""
+                >Login</a
+              >
+              <a class="signup mob-button" href="#">Sign Up</a>
+              <div class="modal fade" id="myModal" role="dialog">
+                <!-- Modal content-->
+                <div class="modal-dialog modal-sm">
+                  <div class="modal-content">
+                    <div class="modal-header d-block">
+                      <img
+                        class="modal-img"
+                        src="assets/images/Logo.png"
+                      /><br />
+                      <h5 class="modal-title">Sign in</h5>
+                    </div>
+                    <div class="modal-body">
+                      <p class="link-p">Sign in with</p>
+                      <div class="social-links d-flex justify-content-between">
+                        <a class="btn btn-default" id="modal-btn" href=""
+                          ><img src="assets/img/google.png"
+                        /></a>
+                        <a class="btn btn-default" id="modal-btn" href=""
+                          ><img src="assets/img/facebook-3-2.png"
+                        /></a>
+                        <a class="btn btn-default" id="modal-btn" href=""
+                          ><img src="assets/img/twitter-6.png"
+                        /></a>
+                      </div>
+                      <div class="last-text">
+                        <div class="lines"></div>
+                        <p class="last-texts">Or continue with email</p>
+                        <div class="lines"></div>
+                      </div>
+                    </div>
+                    <div class="modal-footer d-block">
+                      <form>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="exampleInputEmail1"
+                            aria-describedby="emailHelp"
+                            placeholder="Email address"
+                          />
+                        </div>
+                        <div class="form-group" id="form-group2">
+                          <label for="exampleInputPassword1">Password</label>
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="password"
+                            placeholder="Password"
+                          />
+                          <div class="eye" style="margin-top: -32px !important">
+                            <i
+                              class="fa fa-eye"
+                              aria-hidden="true"
+                              id="eye"
+                              onclick="toggle()"
+                            ></i>
+                          </div>
+                          <div
+                            class="check-section d-flex justify-content-between"
+                          >
+                            <label class="form-check-label" for="exampleCheck1"
+                              >Rememeber me</label
+                            >
+                            <input
+                              type="checkbox"
+                              class="form-check-input"
+                              id="exampleCheck1"
+                            />
+                            <a href="">Forgotten password</a>
+                          </div>
+                        </div>
+                        <div class="sign-btn">
+                          <a href="" class="btn" id="messege">Sign in</a>
+                        </div>
+                      </form>
+                      <div class="last-text">
+                        <div class="lines"></div>
+                        <p class="last-texts">Not a Member?</p>
+                        <div class="lines"></div>
+                      </div>
+                      <div class="join-text text-center">
+                        <p><a href="">Join</a> to tfmtools</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="burger">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+            </div>
+          </nav>
+        </div>
+        <div class="content-container" style="z-index: 1">
+          <div class="welcone">
+            <h3>
+              Agent Info
+              <img
+                src="./assets/images/hero/mobile.png"
+                alt=""
+                class="mobile"
+              />
+            </h3>
+            <p>
+              TFM Tool pro 2.0 are an A-1 and enduring WordPress plugins &
+              <br />
+              application developer. APPSBD believe in quality above everything
+            </p>
+          </div>
+        </div>
+        <img src="./assets/svg/trial-cross.svg" alt="" class="cross" />
+        <img src="./assets/images/hero/Frame.png" alt="" class="curve" />
+        <img src="./assets/svg/chevron-back.svg" alt="" class="arrow" />
+        <img src="./assets/images/hero/Line 302.png" alt="" class="line302" />
+        <img src="./assets/svg/trial-line-4.svg" alt="" class="line303" />
+        <img src="./assets/images/hero/Glass.png" alt="" class="glass" />
+        <img src="./assets/images/hero/Line 305.png" alt="" class="line305" />
+        <img src="./assets/images/hero/Line 306.png" alt="" class="line306" />
+      </div>
+      <div class="content-footer">
+        <img
+          class="tfm-footer-svg"
+          src="./assets/svg/jumbotron-footer.svg"
+          alt=""
+        />
+      </div>
+    </header>
+    <!-- hero section -->
+
+    <!-- about-card-section -->
+    <section class="about-card-section">
+      <div class="container">
+        <div class="content">
+          <div class="top">
+            <div class="map">
+              <!-- <img src="./images/map.png" alt="" class="img-fluid mx-auto"> -->
+              <div class="mapout">
+                <div class="map-holder">
+                  <div id="le">
+                    <div class="mapouter">
+                      <div
+                        class="gmap_canvas"
+                        style="overflow: hidden !important"
+                      >
+                        <!-- older code bellow -->
+                        <!-- <iframe
+                          id="gmap_canvas"
+                          src="https://maps.google.com/maps?q=canada&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+                          frameborder="0"
+                          scrolling="yes"
+                          marginheight="0"
+                          marginwidth="0"
+                        >
+                        </iframe> -->
+                        <!-- <a href="https://2piratebay.org"></a><br /> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="search-contents">
+              <div class="search-bar">
+                <form action="search-bar-action" class="input-group mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    aria-label="Text input with segmented dropdown button"
+                    placeholder="search Agent name and information"
+                    title="search Agent name and information"
+                  />
+
+                  <button
+                    type="button"
+                    class="btn-dropdown btn dropdown-toggle dropdown-toggle-split"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <span class="element-hide">Select area</span>
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="#">Argentina</a></li>
+                    <li><a class="dropdown-item" href="#">Hong Kong</a></li>
+                    <li><a class="dropdown-item" href="#">Thiland</a></li>
+                    <li><a class="dropdown-item" href="#">Bangladesh</a></li>
+                    <li><a class="dropdown-item" href="#">Srilangka</a></li>
+                    <li><a class="dropdown-item" href="#">Soudi Arabia</a></li>
+                    <li><a class="dropdown-item" href="#">China</a></li>
+                    <li><a class="dropdown-item" href="#">Canada</a></li>
+                  </ul>
+                  <button type="submit" class="btn btn-warning btn-search">
+                    <i class="fas fa-search"></i
+                    ><span class="element-hide"> Search</span>
+                  </button>
+                </form>
+                <div class="search-content">
+                  <p>Top search</p>
+                  <div class="search-country">
+                    <div class="country1 active">
+                      <a class="item-1" href="#">Argentina</a>
+                    </div>
+                    <div class="country2">
+                      <a class="item-2" href="#">Hong Kong SAR China</a>
+                    </div>
+                    <div class="country3">
+                      <a class="item-3" href="#">Thiland</a>
+                    </div>
+                    <div class="country4">
+                      <a class="item-4" href="#">Bangladesh</a>
+                    </div>
+                    <div class="country5">
+                      <a class="item-5" href="#">Srilangka</a>
+                    </div>
+                    <div class="country6">
+                      <a class="item-6" href="#">Soudi&nbsp;Arabia</a>
+                    </div>
+                    <div class="country7">
+                      <a class="item-7" href="#">China</a>
+                    </div>
+                    <div class="country8">
+                      <a class="item-8" href="#">Canada</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="body">
+            <div class="distributors">
+              <div class="distributor-details">
+                <div class="distributor">
+                  <div class="details">
+                    <div class="names">
+                      <h3>Distributor name here</h3>
+                      <span>Designation</span>
+                    </div>
+                    <div class="country">
+                      <p>South Africa</p>
+                    </div>
+                    <div class="info ps-3 pe-1 pb-2">
+                      <p class="name">
+                        <span class="props"> Contact Person: </span>
+                        <span class="values"> GSM NURUL </span>
+                      </p>
+
+                      <p class="mail">
+                        <span class="props"> Email: </span>
+                        <span class="values"> admin@gsmafrica. </span>
+                      </p>
+                      <p class="phone">
+                        <span class="props"> Phone: </span>
+                        <span class="values"> +27659713366 </span>
+                      </p>
+                      <p class="web">
+                        <span class="props"> Web: </span>
+                        <span class="values"> www.gsmafrica.com </span>
+                      </p>
+                      <p class="skype">
+                        <span class="props"> Skype: </span>
+                        <span class="values"> gsmafrica.com </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="details">
+                    <div class="names">
+                      <h3>Distributor name here</h3>
+                      <span>Designation</span>
+                    </div>
+                    <div class="country">
+                      <p>South Africa</p>
+                    </div>
+                    <div class="info ps-3 pe-1 pb-2">
+                      <p class="name">
+                        <span class="props"> Contact Person: </span>
+                        <span class="values"> GSM NURUL </span>
+                      </p>
+
+                      <p class="mail">
+                        <span class="props"> Email: </span>
+                        <span class="values"> admin@gsmafrica. </span>
+                      </p>
+                      <p class="phone">
+                        <span class="props"> Phone: </span>
+                        <span class="values"> +27659713366 </span>
+                      </p>
+                      <p class="web">
+                        <span class="props"> Web: </span>
+                        <span class="values"> www.gsmafrica.com </span>
+                      </p>
+                      <p class="skype">
+                        <span class="props"> Skype: </span>
+                        <span class="values"> gsmafrica.com </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="details">
+                    <div class="names">
+                      <h3>Distributor name here</h3>
+                      <span>Designation</span>
+                    </div>
+                    <div class="country">
+                      <p>South Africa</p>
+                    </div>
+                    <div class="info ps-3 pe-1 pb-2">
+                      <p class="name">
+                        <span class="props"> Contact Person: </span>
+                        <span class="values"> GSM NURUL </span>
+                      </p>
+
+                      <p class="mail">
+                        <span class="props"> Email: </span>
+                        <span class="values"> admin@gsmafrica. </span>
+                      </p>
+                      <p class="phone">
+                        <span class="props"> Phone: </span>
+                        <span class="values"> +27659713366 </span>
+                      </p>
+                      <p class="web">
+                        <span class="props"> Web: </span>
+                        <span class="values"> www.gsmafrica.com </span>
+                      </p>
+                      <p class="skype">
+                        <span class="props"> Skype: </span>
+                        <span class="values"> gsmafrica.com </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="details">
+                    <div class="names">
+                      <h3>Distributor name here</h3>
+                      <span>Designation</span>
+                    </div>
+                    <div class="country">
+                      <p>South Africa</p>
+                    </div>
+                    <div class="info ps-3 pe-1 pb-2">
+                      <p class="name">
+                        <span class="props"> Contact Person: </span>
+                        <span class="values"> GSM NURUL </span>
+                      </p>
+
+                      <p class="mail">
+                        <span class="props"> Email: </span>
+                        <span class="values"> admin@gsmafrica. </span>
+                      </p>
+                      <p class="phone">
+                        <span class="props"> Phone: </span>
+                        <span class="values"> +27659713366 </span>
+                      </p>
+                      <p class="web">
+                        <span class="props"> Web: </span>
+                        <span class="values"> www.gsmafrica.com </span>
+                      </p>
+                      <p class="skype">
+                        <span class="props"> Skype: </span>
+                        <span class="values"> gsmafrica.com </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="details">
+                    <div class="names">
+                      <h3>Distributor name here</h3>
+                      <span>Designation</span>
+                    </div>
+                    <div class="country">
+                      <p>South Africa</p>
+                    </div>
+                    <div class="info ps-3 pe-1 pb-2">
+                      <p class="name">
+                        <span class="props"> Contact Person: </span>
+                        <span class="values"> GSM NURUL </span>
+                      </p>
+
+                      <p class="mail">
+                        <span class="props"> Email: </span>
+                        <span class="values"> admin@gsmafrica. </span>
+                      </p>
+                      <p class="phone">
+                        <span class="props"> Phone: </span>
+                        <span class="values"> +27659713366 </span>
+                      </p>
+                      <p class="web">
+                        <span class="props"> Web: </span>
+                        <span class="values"> www.gsmafrica.com </span>
+                      </p>
+                      <p class="skype">
+                        <span class="props"> Skype: </span>
+                        <span class="values"> gsmafrica.com </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="details">
+                    <div class="names">
+                      <h3>Distributor name here</h3>
+                      <span>Designation</span>
+                    </div>
+                    <div class="country">
+                      <p>South Africa</p>
+                    </div>
+                    <div class="info ps-3 pe-1 pb-2">
+                      <p class="name">
+                        <span class="props"> Contact Person: </span>
+                        <span class="values"> GSM NURUL </span>
+                      </p>
+
+                      <p class="mail">
+                        <span class="props"> Email: </span>
+                        <span class="values"> admin@gsmafrica. </span>
+                      </p>
+                      <p class="phone">
+                        <span class="props"> Phone: </span>
+                        <span class="values"> +27659713366 </span>
+                      </p>
+                      <p class="web">
+                        <span class="props"> Web: </span>
+                        <span class="values"> www.gsmafrica.com </span>
+                      </p>
+                      <p class="skype">
+                        <span class="props"> Skype: </span>
+                        <span class="values"> gsmafrica.com </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="details">
+                    <div class="names">
+                      <h3>Distributor name here</h3>
+                      <span>Designation</span>
+                    </div>
+                    <div class="country">
+                      <p>South Africa</p>
+                    </div>
+                    <div class="info ps-3 pe-1 pb-2">
+                      <p class="name">
+                        <span class="props"> Contact Person: </span>
+                        <span class="values"> GSM NURUL </span>
+                      </p>
+
+                      <p class="mail">
+                        <span class="props"> Email: </span>
+                        <span class="values"> admin@gsmafrica. </span>
+                      </p>
+                      <p class="phone">
+                        <span class="props"> Phone: </span>
+                        <span class="values"> +27659713366 </span>
+                      </p>
+                      <p class="web">
+                        <span class="props"> Web: </span>
+                        <span class="values"> www.gsmafrica.com </span>
+                      </p>
+                      <p class="skype">
+                        <span class="props"> Skype: </span>
+                        <span class="values"> gsmafrica.com </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="details">
+                    <div class="names">
+                      <h3>Distributor name here</h3>
+                      <span>Designation</span>
+                    </div>
+                    <div class="country">
+                      <p>South Africa</p>
+                    </div>
+                    <div class="info ps-3 pe-1 pb-2">
+                      <p class="name mb-0">
+                        <span class="props"> Contact Person: </span>
+                        <span class="values"> GSM NURUL </span>
+                      </p>
+
+                      <p class="mail mb-0">
+                        <span class="props"> Email: </span>
+                        <span class="values"> admin@gsmafrica. </span>
+                      </p>
+                      <p class="phone">
+                        <span class="props"> Phone: </span>
+                        <span class="values"> +27659713366 </span>
+                      </p>
+                      <p class="web">
+                        <span class="props"> Web: </span>
+                        <span class="values"> www.gsmafrica.com </span>
+                      </p>
+                      <p class="skype">
+                        <span class="props"> Skype: </span>
+                        <span class="values"> gsmafrica.com </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="reseller">
+                <div class="resseler-text px-5">
+                  <br />
+                  <h3 class="d-flex justify-content-center align-items-center">
+                    Want to become <br />
+                    a reseller?
+                  </h3>
+                  <p class="my-5">
+                    Reprehenderit est poserersimus voluptatem dolorem facilis
+                    aspernatur, reiciendis rerum Doloribus, dicta quibusda
+                    quaerat expedita rem!
+                  </p>
+                  <a
+                    href="#"
+                    class="d-flex justify-content-center align-items-center"
+                    >Become a reseller</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about-card-section -->
+
+    <!--tfm-footer-->
+    <div class="tfm-footer">
+      <div class="container">
+        <div class="col-lg-13">
+          <div class="footer-rows">
+            <div class="mb-4 f-col logo">
+              <img src="assets/img/logo.png" />
+              <p class="italic">
+                TFM Tool is a power full tool for mtk and multibrand tool. It's
+                a professional software servicing tool for mobile phone
+              </p>
+            </div>
+            <div class="mb-4 f-col product">
+              <h6>Products</h6>
+              <a href="">
+                <p>Eᴀꜱʏ FɪʀᴍᴡᴀʀᴇS</p>
+              </a>
+              <a href="">
+                <p>TFM Tool Pro</p>
+              </a>
+              <a href="">
+                <p>Need Flash File</p>
+              </a>
+              <a href="">
+                <p>TFM SERVER</p>
+              </a>
+            </div>
+            <div class="mb-4 f-col support">
+              <h6>Supported Chip</h6>
+              <a href="">
+                <p>MTK</p>
+              </a>
+              <a href="">
+                <p>Qualcomm</p>
+              </a>
+              <a href="">
+                <p>SPD</p>
+              </a>
+            </div>
+            <div class="mb-4 f-col contact">
+              <h6>Contact</h6>
+              <ul class="px-0">
+                <li class="d-flex align-items-center mb-3 mt-0">
+                  <i class="fas fa-map-marker-alt mr-2"></i>
+                  <a
+                    href="https://goo.gl/maps/uDZf1gBB5NdYZ7on7"
+                    class="my-0 ms-3"
+                    target="_blank"
+                    >32/1, Road: 03, Shyamoli, Dhaka-1207, Bangladesh.</a
+                  >
+                </li>
+                <li class="d-flex align-items-center my-3">
+                  <i class="fas fa-phone mr-2"></i>
+                  <a href="tel:+8801303094897" class="my-0 ms-3"
+                    >+(880) 1303-094897</a
+                  >
+                </li>
+                <li class="d-flex align-items-cente my-3">
+                  <i class="fas fa-paper-plane mt-2 mr-2"></i>
+                  <a href="mailto:contact@tfmtool.com" class="my-0 ms-3"
+                    >contact@tfmtool.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="last-line">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+          <p class="mb-0">
+            © 2020 <a href="#">TFM Tool Pro</a>, <br />All rights reserved.
+          </p>
+          <img class="paypal" src="assets/svg/dark-paypal.svg" alt="" />
+        </div>
+      </div>
+    </footer>
+    <!--tfm-footer-->
+
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      var state = false;
+      function toggle() {
+        if (state) {
+          document.getElementById('password').setAttribute('type', 'password');
+          document.getElementById('eye').style.color = '#7a797e';
+          state = false;
+        } else {
+          document.getElementById('password').setAttribute('type', 'text');
+          document.getElementById('eye').style.color = '#5887ef';
+          state = true;
+        }
+      }
+    </script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/agent-info.js" type="text/javascript"></script>
+
+    <!-- map setting start -->
+    <script src="./assets/map/timezone-picker.min.js"></script>
+    <script type="text/javascript">
+      setTimeout(function () {
+        $('.gmap_canvas').timezonePicker({
+          hoverText: function (e, data) {
+            return data.timezone + ' (' + data.zonename + ')';
+          },
+          defaultValue: { value: 'IN', attribute: 'country' },
+        });
+      }, 1000);
+    </script>
+    <!-- map setting end -->
+  </body>
+</html>

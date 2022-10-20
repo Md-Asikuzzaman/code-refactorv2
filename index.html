@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tfm Home</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/tfm/tfm-font2.css" />
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css"
+      integrity="sha512-RWhcC19d8A3vE7kpXq6Ze4GcPfGe3DQWuenhXAbcGiZOaqGojLtWwit1eeM9jLGHFv8hnwpX3blJKGjTsf2HxQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css"
+      integrity="sha512-RWhcC19d8A3vE7kpXq6Ze4GcPfGe3DQWuenhXAbcGiZOaqGojLtWwit1eeM9jLGHFv8hnwpX3blJKGjTsf2HxQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/tfm/tfm-style.css" />
+  </head>
+
+  <body>
+    <!-- tfm header -->
+    <header class="hero-section">
+      <div class="container">
+        <div class="nav-container">
+          <nav>
+            <div class="logo">
+              <img src="assets/img/logo.png" />
+            </div>
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="top-feature.html">Features</a></li>
+              <li><a href="models.html">Support Models</a></li>
+              <li><a href="price.html">Price</a></li>
+              <li><a href="agent-info.html">Resellers</a></li>
+              <li><a href="downloads.html">Download</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-login">
+              <a
+                class="login"
+                data-toggle="modal"
+                data-target="#myModal"
+                href=""
+                >Login</a
+              >
+              <a class="SignUp" href="">Sign Up</a>
+              <div class="modal fade" id="myModal" role="dialog">
+                <!-- Modal content-->
+                <div class="modal-dialog modal-sm">
+                  <div class="modal-content">
+                    <div class="modal-header d-block">
+                      <img
+                        class="modal-img"
+                        src="./assets/images/Logo.png"
+                      /><br />
+                      <h4 class="modal-title">Sign in</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p class="link-p">Sign in with</p>
+                      <div class="social-links d-flex justify-content-between">
+                        <a class="btn btn-default" id="modal-btn" href=""
+                          ><img src="./assets/img/google.png"
+                        /></a>
+                        <a class="btn btn-default" id="modal-btn" href=""
+                          ><img src="./assets/img/facebook-3-2.png"
+                        /></a>
+                        <a class="btn btn-default" id="modal-btn" href=""
+                          ><img src="./assets/img/twitter-6.png"
+                        /></a>
+                      </div>
+                      <div class="last-text">
+                        <div class="lines email-lines"></div>
+                        <p class="last-texts">Or continue with email</p>
+                        <div class="lines email-lines"></div>
+                      </div>
+                    </div>
+                    <div class="modal-footer d-block">
+                      <form>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="exampleInputEmail1"
+                            aria-describedby="emailHelp"
+                            placeholder="Email address"
+                          />
+                        </div>
+                        <div class="form-group" id="form-group2">
+                          <label for="exampleInputPassword1">Password</label>
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="password"
+                            placeholder="Password"
+                          />
+                          <div class="eye">
+                            <i
+                              class="fa fa-eye"
+                              aria-hidden="true"
+                              id="eye"
+                              onclick="toggle()"
+                            ></i>
+                          </div>
+                          <div
+                            class="check-section d-flex justify-content-between"
+                          >
+                            <label class="form-check-label" for="exampleCheck1"
+                              >Rememeber me</label
+                            >
+                            <input
+                              type="checkbox"
+                              class="form-check-input"
+                              id="exampleCheck1"
+                            />
+                            <a href="">Forgotten password</a>
+                          </div>
+                        </div>
+                        <div class="sign-btn">
+                          <a href="" class="btn" id="messege">Sign in</a>
+                        </div>
+                      </form>
+                      <div class="last-text">
+                        <div class="lines member-lines"></div>
+                        <p class="last-texts">Not a Member?</p>
+                        <div class="lines member-lines"></div>
+                      </div>
+                      <div class="join-text text-center">
+                        <p><a href="">Join</a> to tfmtools</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--modal-content-end-->
+            </div>
+            <div class="burger">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- tfm end header -->
+
+    <!-- tfm-jumbotron -->
+    <div class="tfm-jumbotron">
+      <div class="tfm-svg-shape-layout">
+        <div class="tfm-liner-point">
+          <img
+            class="tfm-liner-point-svg"
+            src="./assets/img/third-element.png"
+            alt=""
+          />
+        </div>
+        <div class="tfm-rubber">
+          <img
+            class="tfm-rubber-svg"
+            src="./assets/svg/tfm-rubber.svg"
+            alt=""
+          />
+        </div>
+
+        <i class="tfm-chevron-svg"></i>
+
+        <i class="tfm-second-liner-svg"></i>
+        <div class="tfm-third-liner-svg">
+          <img
+            class="tfm-third-line-svg"
+            src="./assets/svg/tfm-third-liner-svg.svg"
+            alt=""
+          />
+        </div>
+
+        <i class="tfm-glass"></i>
+        <i class="tfm-fourth-liner-svg"></i>
+        <i class="tfm-pomp-svg"></i>
+
+        <div class="tfm-liner-fifth">
+          <img
+            class="tfm-liner-fifth-svg"
+            src="./assets/img/liner-fifth.png"
+            alt=""
+          />
+        </div>
+
+        <i class="tfm-liner-sixth"></i>
+      </div>
+      <div class="container">
+        <div class="row content-row">
+          <div class="new-content">
+            <h1>WELCOME TO TFM TOOL PRO</h1>
+            <p>
+              TFM Tool pro 2.0 are an A-1 and enduring WordPress plugins &
+              application developer. APPSBD believe in quality
+            </p>
+            <div class="btns">
+              <a id="btnn" href="" class="btn btn-warning">DOWNLOAD NOW</a>
+              <a id="bttn" href="" class="btn btn-default bg-white"
+                >GET YOUR LICENCE</a
+              >
+            </div>
+          </div>
+          <div class="right-align">
+            <div class="new-content2">
+              <img id="laptop" class="img-fluid" src="./assets/img/Video.png" />
+              <img class="moon2" src="./assets/img/moon2.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tfm-jumbotron-footer">
+        <img
+          class="tfm-footer-svg"
+          src="./assets/svg/jumbotron-footer.svg"
+          alt=""
+        />
+      </div>
+    </div>
+    <!-- tfm-jumbotron -->
+
+    <!-- Top-feature -->
+    <div class="feature">
+      <div class="container tfm-features">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="tool-feature">
+              <a
+                id="about"
+                href="index2.html"
+                class="btn btn-default text-warning"
+                >About</a
+              >
+              <h1 class="text-dark">Top Feature Of TFM Tool <br /></h1>
+              <p class="text-dark">
+                Seen scope of phone repair services. From the beginning,
+                ChimeraTool was designed to be easily navigated BiWeekly Update
+                Summary Fixes and Improvements without requiring any
+                professional skill from the user. Mtost functions within the
+                tool work automatically seen scope of phone repair services.
+              </p>
+              <br />
+              <br />
+              <img
+                src="./assets/img/tools.jpg"
+                class="img-fluid timage"
+                alt=""
+              />
+              <a id="btn-pro" href="" class="btn btn-default"
+                >DOWNLOAD NOW TFM TOOL PRO</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="container-fluid tool-card">
+              <div class="row feature-flex">
+                <div class="card border-0">
+                  <div class="card-header">
+                    <a id="update" href="" class="btn btn-default">About</a>
+                    <h1>Updates & Changelog</h1>
+                  </div>
+                  <div class="card-body">
+                    <div class="container-fluid tfm-table">
+                      <table class="table table-dark table-striped">
+                        <tr>
+                          <th class="d-flex align-items-start" scope="row">
+                            <li class="mr-top"></li>
+                            <a class="m-3" href=""
+                              >30 BiWeekly Update Summary - Fixes and
+                              Improvements</a
+                            >
+                          </th>
+                          <td>
+                            <h5>
+                              <span class="badge badge-secondary"
+                                >Aug 05,2021</span
+                              >
+                            </h5>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th class="d-flex align-items-start" scope="row">
+                            <li class="mr-top"></li>
+                            <a class="m-3" href=""
+                              >30 BiWeekly Update Summary - Fixes and
+                              Improvements</a
+                            >
+                          </th>
+                          <td>
+                            <h5>
+                              <span class="badge badge-secondary"
+                                >Aug 05,2021</span
+                              >
+                            </h5>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th class="d-flex align-items-start" scope="row">
+                            <li class="mr-top"></li>
+                            <a class="m-3" href=""
+                              >30 BiWeekly Update Summary - Fixes and
+                              Improvements</a
+                            >
+                          </th>
+                          <td>
+                            <h5>
+                              <span class="badge badge-secondary"
+                                >Aug 05,2021</span
+                              >
+                            </h5>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th class="d-flex align-items-start" scope="row">
+                            <li class="mr-top"></li>
+                            <a class="m-3" href=""
+                              >30 BiWeekly Update Summary - Fixes and
+                              Improvements</a
+                            >
+                          </th>
+                          <td>
+                            <h5>
+                              <span class="badge badge-secondary"
+                                >Aug 05,2021</span
+                              >
+                            </h5>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th class="d-flex align-items-start" scope="row">
+                            <li class="mr-top"></li>
+                            <a class="m-3" href=""
+                              >30 BiWeekly Update Summary - Fixes and
+                              Improvements</a
+                            >
+                          </th>
+                          <td>
+                            <h5>
+                              <span class="badge badge-secondary"
+                                >Aug 05,2021</span
+                              >
+                            </h5>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th class="d-flex align-items-start" scope="row">
+                            <li class="mr-top"></li>
+                            <a class="m-3" href=""
+                              >30 BiWeekly Update Summary - Fixes and
+                              Improvements</a
+                            >
+                          </th>
+                          <td>
+                            <h5>
+                              <span class="badge badge-secondary"
+                                >Aug 05,2021</span
+                              >
+                            </h5>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th class="d-flex align-items-start" scope="row">
+                            <li class="mr-top"></li>
+                            <a class="m-3" href=""
+                              >30 BiWeekly Update Summary - Fixes and
+                              Improvements</a
+                            >
+                          </th>
+                          <td>
+                            <h5>
+                              <span class="badge badge-secondary"
+                                >Aug 05,2021</span
+                              >
+                            </h5>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <a id="full-update" href="" class="btn btn-warning"
+                      >SHOW FULL UPDATES</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Top-feature -->
+
+    <!--card-show-option -->
+    <div class="tool-feature-card">
+      <div class="container">
+        <div class="card-content">
+          <div class="head">
+            <a href="#">
+              <btn class="btn btn-warning" id="tool-feature">Tool Features</btn>
+            </a>
+            <h1>
+              why 30k Business<br />
+              Choose Our Tool?
+            </h1>
+          </div>
+          <div class="tools-content">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="card b-card" id="mr-card1">
+                  <div class="card-body">
+                    <img
+                      class="card-body-svg"
+                      src="assets/svg/card-1.svg"
+                      alt=""
+                    />
+                    <h5 class="card-title">Repair IMEI & MAC</h5>
+                    <p class="card-text">
+                      We combine the best local agents and the smartest
+                      technology to deliver one-of-a-kind solutions
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="card b-card" id="mr-card2">
+                  <div class="card-body">
+                    <img
+                      class="card-body-svg"
+                      src="assets/svg/card-2.svg"
+                      alt=""
+                    />
+                    <h5 class="card-title">Read & Write Certificate</h5>
+                    <p class="card-text">
+                      We combine the best local agents and the smartest
+                      technology to deliver one-of-a-kind solutions
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="card b-card">
+                  <div class="card-body">
+                    <img
+                      class="card-body-svg"
+                      src="assets/svg/card-3.svg"
+                      alt=""
+                    />
+                    <h5 class="card-title">Modem Repair</h5>
+                    <p class="card-text">
+                      We combine the best local agents and the smartest
+                      technology to deliver one-of-a-kind solutions
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="card b-card" id="mr-card4">
+                  <div class="card-body">
+                    <img
+                      class="card-body-svg"
+                      src="assets/svg/card-4.svg"
+                      alt=""
+                    />
+                    <h5 class="card-title">Get Device Information</h5>
+                    <p class="card-text">
+                      We combine the best local agents and the smartest
+                      technology to deliver one-of-a-kind solutions
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="card b-card" id="mr-card5">
+                  <div class="card-body">
+                    <img
+                      class="card-body-svg"
+                      src="assets/svg/card-5.svg"
+                      alt=""
+                    />
+                    <h5 class="card-title">Change software</h5>
+                    <p class="card-text">
+                      We combine the best local agents and the smartest
+                      technology to deliver one-of-a-kind solutions
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="card b-card">
+                  <div class="card-body">
+                    <img
+                      class="card-body-svg"
+                      src="assets/svg/card-6.svg"
+                      alt=""
+                    />
+                    <h5 class="card-title">Backup & Restore</h5>
+                    <p class="card-text">
+                      We combine the best local agents and the smartest
+                      technology to deliver one-of-a-kind solutions
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img class="side-moon" src="assets/img/ellipse46.png" />
+            <img class="img-fluid BG" src="assets/img/backcoloud.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--card-show-option-->
+
+    <!--card-hide-section -->
+    <div class="about-tool">
+      <div class="container">
+        <div class="swiper-container">
+          <div class="row swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card b-card" style="width: 20rem">
+                <div class="card-body">
+                  <img src="assets/img/card-img1.png" />
+                  <h5 class="card-title">Repair IMEI & MAC</h5>
+                  <p class="card-text">
+                    We combine the best local agents and the smartest technology
+                    to deliver one-of-a-kind solutions
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card b-card swiper-slide" style="width: 20rem">
+                <div class="card-body">
+                  <img src="assets/img/card-img2.png" />
+                  <h5 class="card-title">Read & Write certificate</h5>
+                  <p class="card-text">
+                    We combine the best local agents and the smartest technology
+                    to deliver one-of-a-kind solutions
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card b-card swiper-slide" style="width: 20rem">
+                <div class="card-body">
+                  <img src="assets/img/card-img3.png" />
+                  <h5 class="card-title">Modem Repair</h5>
+                  <p class="card-text">
+                    We combine the best local agents and the smartest technology
+                    to deliver one-of-a-kind solutions
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card b-card swiper-slide" style="width: 20rem">
+                <div class="card-body">
+                  <img src="assets/img/card-img4.png" />
+                  <h5 class="card-title">Get Device Information</h5>
+                  <p class="card-text">
+                    We combine the best local agents and the smartest technology
+                    to deliver one-of-a-kind solutions
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card b-card swiper-slide" style="width: 20rem">
+                <div class="card-body">
+                  <img src="assets/img/card-img5.png" />
+                  <h5 class="card-title">Change software</h5>
+                  <p class="card-text">
+                    We combine the best local agents and the smartest technology
+                    to deliver one-of-a-kind solutions
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card b-card swiper-slide" style="width: 20rem">
+                <div class="card-body">
+                  <img src="assets/img/card-img6.png" />
+                  <h5 class="card-title">Backup and Restore</h5>
+                  <p class="card-text">
+                    We combine the best local agents and the smartest technology
+                    to deliver one-of-a-kind solutions
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--card-hide-section-->
+
+    <!-- work-process -->
+    <div class="work-proccess">
+      <div class="tool-work">
+        <a id="btn-process" href="" class="btn btn-default">Work Process</a>
+        <h1>How TFM Tools works?</h1>
+      </div>
+      <div class="container">
+        <div class="row work-flex">
+          <div class="col-lg-6 head1">
+            <div class="row-flex">
+              <div class="svg-flex1">
+                <!-- <img class="number-svg" src="assets/svg/number-1.svg" alt=""> -->
+                <p class="number-svg1">01</p>
+                <div class="aero1">
+                  <div class="vl2"></div>
+                  <div class="vl12"></div>
+                </div>
+              </div>
+              <div class="svg-flex2">
+                <h5 class="svg-text">Step one goes here</h5>
+                <div class="aero-text1 arrow-text">
+                  <img
+                    class="number-svg"
+                    src="assets/svg/forward-arrow.svg"
+                    alt=""
+                  />
+                  <h6>Developing a successful digital product i</h6>
+                </div>
+                <div class="aero-text2 arrow-text">
+                  <img
+                    class="number-svg"
+                    src="assets/svg/forward-arrow.svg"
+                    alt=""
+                  />
+                  <h6>Developing a successful digital product i</h6>
+                </div>
+              </div>
+              <br />
+            </div>
+
+            <div class="row-flex2">
+              <div class="svg-flex1">
+                <!-- <img class="number-svg" src="assets/svg/number-2.svg" alt=""> -->
+                <p class="number-svg1">02</p>
+
+                <div class="aero1">
+                  <div class="vl"></div>
+                  <div class="vl1"></div>
+                </div>
+              </div>
+              <div class="svg-flex2">
+                <h5 class="svg-text">Step one goes here</h5>
+                <div class="aero-text1 arrow-text">
+                  <img
+                    class="number-svg"
+                    src="assets/svg/forward-arrow.svg"
+                    alt=""
+                  />
+                  <h6>Developing a successful digital product i</h6>
+                </div>
+                <div class="aero-text2 arrow-text">
+                  <img
+                    class="number-svg"
+                    src="assets/svg/forward-arrow.svg"
+                    alt=""
+                  />
+                  <h6>Developing a successful digital product i</h6>
+                </div>
+              </div>
+              <br />
+            </div>
+
+            <div class="row-flex3">
+              <div class="svg-flex1">
+                <!-- <img class="number-svg" src="assets/svg/number-3.svg" alt=""> -->
+                <p class="number-svg1">03</p>
+              </div>
+              <div class="svg-flex2">
+                <h5 class="svg-text">Step one goes here</h5>
+                <div class="aero-text1 arrow-text">
+                  <img
+                    class="number-svg"
+                    src="assets/svg/forward-arrow.svg"
+                    alt=""
+                  />
+                  <h6>Developing a successful digital product i</h6>
+                </div>
+                <div class="aero-text2 arrow-text">
+                  <img
+                    class="number-svg"
+                    src="assets/svg/forward-arrow.svg"
+                    alt=""
+                  />
+                  <h6>Developing a successful digital product i</h6>
+                </div>
+              </div>
+              <br />
+            </div>
+          </div>
+
+          <div class="col-lg-6 head2">
+            <img class="img-fluid shadow" src="assets/img/tool.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- work-process -->
+
+    <!--tfm-brand-section -->
+    <div class="tfm-brand">
+      <div class="brand">
+        <a id="brand" href="" class="btn btn-default">Brand</a>
+        <h1 class="mb-5">Tones of Supported Moddels</h1>
+      </div>
+      <div class="container">
+        <div class="col-lg-12">
+          <!-- work here -->
+          <section>
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <a href=""><img src="./assets/images/xiaomi.png" /></a>
+              </div>
+              <div class="item">
+                <a href=""><img src="./assets/images/realme.png" /></a>
+              </div>
+              <div class="item">
+                <a href=""><img src="./assets/images/samsung.png" /></a>
+              </div>
+              <div class="item">
+                <a href=""><img src="./assets/images/oppo.png" /></a>
+              </div>
+              <div class="item">
+                <a href=""><img src="./assets/images/symphony.png" /></a>
+              </div>
+              <div class="item">
+                <a href=""><img src="./assets/images/one+.png" /></a>
+              </div>
+            </div>
+          </section>
+          <!-- work here -->
+          <section>
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <a href=""><img src="./assets/images/blackberry.png" /></a>
+              </div>
+              <div class="item">
+                <a href=""><img src="./assets/images/vivo.png" /></a>
+              </div>
+              <div class="item">
+                <a href=""><img src="./assets/images/oppo.png" /></a>
+              </div>
+              <div class="item">
+                <a href=""><img src="./assets/images/samsung.png" /></a>
+              </div>
+              <div class="item">
+                <a href=""><img src="./assets/images/realme.png" /></a>
+              </div>
+              <div class="item">
+                <a href=""><img src="./assets/images/walton.png" /></a>
+              </div>
+            </div>
+          </section>
+        </div>
+        <i class="tfm-vector"></i>
+        <i class="tfm-vector1"></i>
+        <i class="tfm-vector3"></i>
+        <i class="tfm-circle4"></i>
+      </div>
+    </div>
+    <!--tfm-brand-section-->
+
+    <!-- tfm-customer -->
+    <div class="customer">
+      <div class="container tfm-customer">
+        <div class="row customer-row justify-content-center">
+          <div class="col-lg-5 customer-review">
+            <h6 class="text-dark">
+              Feedback from these happy customers helps us in reaching the
+              heights
+            </h6>
+            <h1 class="text-dark">Happy Customers</h1>
+            <div class="customer-svg">
+              <img class="img-fluid" src="assets/svg/customer.svg" />
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-10 customer-comment">
+            <div class="profile text-dark">
+              <div class="peras">
+                <img class="" src="assets/svg/quote.svg" alt="" />
+              </div>
+              <div class="profile-section">
+                <img class="img-fluid profile1" src="assets/img/profile.png" />
+                <h5>Jenny Wilson</h5>
+                <h6>Vice president</h6>
+                <p>
+                  We had an incredible experience working with Landify and were
+                  impressed they made such a big difference in only three weeks.
+                  Our team is so grateful for the
+                </p>
+              </div>
+            </div>
+            <div class="shiphob">
+              <img src="assets/img/shipbob-.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- tfm-customer -->
+
+    <!-- tfm-random -->
+    <div class="random">
+      <div class="container">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-4">
+              <img
+                class="customer-review"
+                src="assets/svg/customer-review.svg"
+                alt=""
+              />
+              <h1 style="color: #6d28d9; font-weight: 900">4.9</h1>
+              <h6>Customer Reviews 2100</h6>
+            </div>
+            <div class="col-md-4">
+              <img
+                class="downloaded-customer"
+                src="assets/svg/downloaded-customer.svg"
+                alt=""
+              />
+              <h1 style="color: #6d28d9; font-weight: 900">5M+</h1>
+              <h6>Download in 2020</h6>
+            </div>
+            <div class="col-md-4">
+              <img
+                class="satisfy-customer"
+                src="assets/svg/satisfy-customer.svg"
+                alt=""
+              />
+              <h1 style="color: #6d28d9; font-weight: 900">15M+</h1>
+              <h6>satisfied custome globally</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- tfm-random -->
+
+    <!-- tfm-price -->
+    <div class="price">
+      <div class="container">
+        <div class="content">
+          <div
+            class="price-row d-flex align-items-center justify-content-center"
+          >
+            <div class="col-md-9 col-lg-6 left active" id="yearly">
+              <div class="card price-card" style="width: 56%">
+                <div class="card-header top-1">
+                  <h5>BASIC</h5>
+                  <p>Yearly Package</p>
+                </div>
+                <div class="card-body p-body1">
+                  <h1>
+                    $97.
+                    <p>99</p>
+                  </h1>
+                  <h6>Anonymous user</h6>
+                  <h6>Bot Detection</h6>
+                  <h6>Registration</h6>
+                  <h6>Directory</h6>
+                </div>
+                <div class="card-footer p-footer1">
+                  <a id="p-btn" href="" class="btn btn-default">Download Now</a>
+                </div>
+              </div>
+              <div class="card-value">
+                <div class="card p-card2" style="width: 50%">
+                  <div class="card-header top-2">
+                    <h5>Premium</h5>
+                    <p>Yearly Package</p>
+                  </div>
+                  <div class="card-body p-body2">
+                    <h1>
+                      $99.
+                      <p>99</p>
+                    </h1>
+                    <h6>Full 50+ online class</h6>
+                    <h6>24h Support customer</h6>
+                    <h6>Premium certificate</h6>
+                  </div>
+                  <div class="card-footer footer2">
+                    <a id="footer2" href="" class="btn btn-warning"
+                      >Download Now</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <img class="img-fluid bg" src="assets/img/BG.png" />
+              <img class="mask-group" src="assets/img/mask-group.png" />
+              <img class="img-fluid emoji" src="assets/svg/thumbs-up.svg" />
+            </div>
+
+            <div class="col-md-9 col-lg-6 left" id="monthly">
+              <div class="card price-card" style="width: 56%">
+                <div class="card-header top-1">
+                  <h5>BASIC</h5>
+                  <p>Monthly Package</p>
+                </div>
+                <div class="card-body p-body1">
+                  <h1>
+                    $97.
+                    <p>99</p>
+                  </h1>
+                  <h6>Anonymous user</h6>
+                  <h6>Bot Detection</h6>
+                  <h6>Registration</h6>
+                  <h6>Directory</h6>
+                </div>
+                <div class="card-footer p-footer1">
+                  <a id="p-btn" href="" class="btn btn-default">Download Now</a>
+                </div>
+              </div>
+
+              <div class="card-value">
+                <div class="card p-card2" style="width: 50%">
+                  <div class="card-header top-2">
+                    <h5>Premium</h5>
+                    <p>Monthly Package</p>
+                  </div>
+                  <div class="card-body p-body2">
+                    <h1>
+                      $99.
+                      <p>99</p>
+                    </h1>
+                    <h6>Full 50+ online class</h6>
+                    <h6>24h Support customer</h6>
+                    <h6>Premium certificate</h6>
+                  </div>
+                  <div class="card-footer footer2">
+                    <a id="footer2" href="" class="btn btn-warning"
+                      >Download Now</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <img class="img-fluid bg" src="assets/img/BG.png" />
+              <img class="mask-group" src="assets/img/mask-group.png" />
+              <img class="img-fluid emoji" src="assets/svg/thumbs-up.svg" />
+            </div>
+
+            <div
+              class="col-md-6 d-flex align-items-center justify-content-center text-center right"
+            >
+              <div class="card p-value border-0" style="width: 18rem">
+                <div class="card-header price-header">
+                  <a href="" id="price-btn" class="btn btn-default price-btn"
+                    >Pricing value</a
+                  >
+                  <h1>Our Pricing</h1>
+                </div>
+                <div class="card-body price-body">
+                  <p class="card-text">
+                    The link between the Employee and Employment Company.
+                  </p>
+                </div>
+                <div class="subscription d-flex align-items-center">
+                  <div class="month">
+                    <input
+                      type="radio"
+                      class="tab-btn"
+                      name="subscription"
+                      id="monthly-sub"
+                    />
+                    <label for="monthly-sub" data-id="monthly">Monthly</label>
+                  </div>
+                  <div class="year">
+                    <input
+                      type="radio"
+                      class="tab-btn"
+                      name="subscription"
+                      id="yearly-sub"
+                      checked
+                    />
+                    <label for="yearly-sub" class="active" data-id="yearly"
+                      >Yearly</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- tfm-price -->
+
+    <!--tfm-jumbotron-new-->
+    <div class="tfm-jumbotron-new">
+      <div class="tfm-svg-shape">
+        <div class="left-first-line">
+          <img class="trial-left-1" src="assets/svg/trial-left-1.svg" alt="" />
+        </div>
+        <div class="left-second-line">
+          <img class="trial-left-2" src="assets/svg/trial-left-2.svg" alt="" />
+        </div>
+        <div class="left-third-line">
+          <img class="trial-left-3" src="assets/svg/trial-left-3.svg" alt="" />
+        </div>
+        <div class="left-fourth-line">
+          <img class="trial-left-4" src="assets/svg/trial-left-4.svg" alt="" />
+        </div>
+        <div class="right-first-line">
+          <img
+            class="trial-right-1"
+            src="assets/svg/trial-right-1.svg"
+            alt=""
+          />
+        </div>
+        <div class="right-second-line">
+          <img
+            class="trial-right-2"
+            src="assets/svg/trial-right-2.svg"
+            alt=""
+          />
+        </div>
+        <div class="right-third-line">
+          <img
+            class="trial-right-3"
+            src="assets/svg/trial-right-3.svg"
+            alt=""
+          />
+        </div>
+        <div class="right-fourth-line">
+          <img src="assets/img/right-fourth-line.png" />
+        </div>
+        <div class="stand-line1">
+          <img class="trial-line-1" src="assets/svg/trial-line-1.svg" alt="" />
+        </div>
+        <div class="stand-line2">
+          <img class="trial-line-2" src="assets/svg/trial-line-2.svg" alt="" />
+        </div>
+        <div class="stand-line3">
+          <img class="trial-line-3" src="assets/svg/trial-line-3.svg" alt="" />
+        </div>
+        <div class="stand-line4">
+          <img class="trial-line-4" src="assets/svg/trial-line-4.svg" alt="" />
+        </div>
+        <div class="stand-line5">
+          <img class="trial-line-5" src="assets/svg/trial-line-5.svg" alt="" />
+        </div>
+        <div class="stand-line6">
+          <img class="trial-line-6" src="assets/svg/trial-line-6.svg" alt="" />
+        </div>
+        <i class="svg-circle1"></i>
+        <div class="svg-circle3">
+          <img
+            class="trial-line-3-circle"
+            src="assets/svg/trial-line-3-circle.svg"
+            alt=""
+          />
+        </div>
+        <div class="svg-circle4">
+          <img
+            class="trial-line-4-circle"
+            src="assets/svg/trial-line-4-circle.svg"
+            alt=""
+          />
+        </div>
+        <div class="svg-star1">
+          <img class="trial-cross" src="assets/svg/trial-cross.svg" alt="" />
+        </div>
+      </div>
+      <div class="container trial">
+        <div class="col-lg-13 w-100 mx-auto trials">
+          <h1>
+            Get Started With<br />
+            7 Days Trail
+          </h1>
+          <p>
+            Optimize For user Experience and Privacy. Use Social Login
+            Integrations, <br />Lower User Friction.
+          </p>
+          <a id="trial-btn" href="" class="btn btn-default"
+            >DOWNLOAD TFM TOOL PRO</a
+          >
+        </div>
+      </div>
+    </div>
+    <!--tfm-jumbotron-new--end-->
+
+    <!--tfm-footer-->
+    <div class="tfm-footer bg-white">
+      <div class="container">
+        <div class="col-lg-13">
+          <div class="footer-rows">
+            <div class="mb-4 f-col logo">
+              <img src="assets/img/logo.png" />
+              <p class="italic">
+                TFM Tool is a power full tool for mtk and multibrand tool. It's
+                a professional software servicing tool for mobile phone
+              </p>
+            </div>
+            <div class="mb-4 f-col product">
+              <h6>Products</h6>
+              <a href="">
+                <p>Eᴀꜱʏ FɪʀᴍᴡᴀʀᴇS</p>
+              </a>
+              <a href="">
+                <p>TFM Tool Pro</p>
+              </a>
+
+              <a href="">
+                <p>Need Flash File</p>
+              </a>
+              <a href="">
+                <p>TFM SERVER</p>
+              </a>
+            </div>
+            <div class="mb-4 f-col support">
+              <h6>Supported Chip</h6>
+              <a href="">
+                <p>MTK</p>
+              </a>
+              <a href="">
+                <p>Qualcomm</p>
+              </a>
+              <a href="">
+                <p>SPD</p>
+              </a>
+            </div>
+            <div class="mb-4 f-col contact">
+              <h6>Contact</h6>
+              <ul class="px-0">
+                <li class="d-flex align-items-center mb-3 mt-0">
+                  <i class="fas fa-map-marker-alt mr-2"></i>
+                  <a
+                    href="https://goo.gl/maps/uDZf1gBB5NdYZ7on7"
+                    class="my-0 ms-3"
+                    target="_blank"
+                    >32/1, Road: 03, Shyamoli, Dhaka-1207, Bangladesh.</a
+                  >
+                </li>
+                <li class="d-flex align-items-center my-3">
+                  <i class="fas fa-phone mr-2"></i>
+                  <a href="tel:+8801303094897" class="my-0 ms-3"
+                    >+(880) 1303-094897</a
+                  >
+                </li>
+                <li class="d-flex align-items-cente my-3">
+                  <i class="fas fa-paper-plane mt-2 mr-2"></i>
+                  <a href="mailto:contact@tfmtool.com" class="my-0 ms-3"
+                    >contact@tfmtool.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="last-line">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+          <p class="mb-0">
+            © 2020 <a href="#">TFM Tool Pro</a>, <br />All rights reserved.
+          </p>
+          <img class="paypal" src="assets/svg/paypal.svg" alt="" />
+        </div>
+      </div>
+    </footer>
+    <!--tfm-footer-->
+
+    <!-- script file -->
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"
+      integrity="sha512-9CWGXFSJ+/X0LWzSRCZFsOPhSfm6jbnL+Mpqo0o8Ke2SYr8rCTqb4/wGm+9n13HtDE1NQpAEOrMecDZw4FXQGg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/swiper.js"></script>
+    <script src="./assets/js/prices.js"></script>
+    <script type="module">
+      import Swiper from 'https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js';
+    </script>
+    <script>
+      var state = false;
+      function toggle() {
+        if (state) {
+          document.getElementById('password').setAttribute('type', 'password');
+          document.getElementById('eye').style.color = '#7a797e';
+          state = false;
+        } else {
+          document.getElementById('password').setAttribute('type', 'text');
+          document.getElementById('eye').style.color = '#5887ef';
+          state = true;
+        }
+      }
+
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        autoplay: true,
+        margin: 10,
+        nav: true,
+        responsiveClass: true,
+        autoplayTimeout: 100,
+        autoplayHoverPause: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 3,
+          },
+          1000: {
+            items: 5,
+          },
+        },
+      });
+    </script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/carousel.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+<!-- Work process end -->

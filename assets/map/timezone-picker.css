@@ -1,0 +1,75 @@
+.example {
+  background-color: #9ddaf8;
+}
+
+.timezone-map {
+  max-height: 480px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden !important;
+}
+.timezone-map polygon {
+  fill: #a4a9b4;
+  stroke-width: 0.5;
+  stroke: #ffffff;
+}
+.timezone-map polygon[data-selected='true'] {
+  fill: #6e38f7;
+  stroke: #6e38f7;
+}
+.timezone-map polygon:hover {
+  fill: #6e38f7;
+  stroke: #6e38f7;
+  cursor: pointer;
+}
+.filter-box > * {
+  float: left;
+  height: 24px;
+}
+.filter-box select {
+  width: 45%;
+  padding: 0 0 0 10px;
+  display: none !important;
+}
+.filter-box .quick-link {
+  width: 52%;
+  overflow-x: auto;
+  white-space: nowrap;
+  overflow-y: hidden;
+  display: none !important;
+}
+.filter-box .quick-link span {
+  font-weight: 300;
+  border-radius: 3px;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  margin-left: 10px;
+  font-size: 9px;
+  padding: 4px 6px;
+}
+.filter-box .quick-link span.active {
+  color: #fff;
+  background-color: orange;
+}
+.filter-box .quick-link span:hover {
+  color: #fff;
+  background-color: orange;
+  cursor: pointer;
+}
+.filter-box .hover-text {
+  height: 20px;
+  width: 100%;
+  padding: 10px;
+}
+.filter-box .hover-text p {
+  opacity: 0;
+  text-align: center;
+  transform: scale(10);
+  transition: all 0.3s ease-in-out 0.2s;
+}
+.filter-box .hover-text p.active {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out 0.1s;
+}
